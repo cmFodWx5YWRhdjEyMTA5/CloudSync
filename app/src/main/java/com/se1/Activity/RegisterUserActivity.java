@@ -55,7 +55,7 @@ public class RegisterUserActivity extends ActionBarActivity {
                             }
                             else
                             {
-                                Log.d("loggedin value==",""+loggedInValue);
+
                                 Toast.makeText(getApplicationContext(), "You have been successfully registered!",
                                         Toast.LENGTH_LONG).show();
                                 datasource.insertUser(email.getText().toString(),password.getText().toString(),loggedInValue,firstName.getText().toString(),lastName.getText().toString()) ;
