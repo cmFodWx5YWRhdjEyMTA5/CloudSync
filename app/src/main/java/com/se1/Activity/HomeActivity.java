@@ -15,12 +15,23 @@ import com.se1.dao.User;
 import com.se1.main.MainActivity;
 import com.se1.main.R;
 
-public class HomeActivity extends ActionBarActivity {
+public class HomeActivity extends BaseActivity {
     private DatabaseOperation datasource;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        getSupportActionBar().setTitle(R.string.title_activity_home);
+        /*Start of NavDrawer code*/
+        getLayoutInflater().inflate(R.layout.activity_home, frameLayout);
+
+        /**
+         * Setting title and itemChecked
+         */
+        mDrawerList.setItemChecked(position, true);
+        setTitle(listArray[position]);
+        /*End of NavDrawer code*/
+
+        //setContentView(R.layout.activity_home);
         final Button removeSignIn   = (Button)findViewById(R.id.removeSignIn);
         final Button boxId   = (Button)findViewById(R.id.boxId);
         datasource = new DatabaseOperation(this);

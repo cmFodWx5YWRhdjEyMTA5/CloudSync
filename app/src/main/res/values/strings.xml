@@ -6,11 +6,18 @@
     <string name="NewPass">New Password</string>
     <string name="OldPass">Old Password</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_register_user">RegisterUserActivity</string>
-    <string name="title_activity_home">HomeActivity</string>
-    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_register_user">Register</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_reset_password">Reset Password</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_dropbox">DropboxActivity</string>
+    <string name="title_activity_dropbox">Dropbox</string>
     <string name="title_activity_splash">splash</string>
-
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Home</item>
+        <item>DropBox</item>
+        <item>Google Drive</item>
+    </string-array>
 </resources>

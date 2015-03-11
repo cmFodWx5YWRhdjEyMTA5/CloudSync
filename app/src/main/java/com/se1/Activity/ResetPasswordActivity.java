@@ -22,6 +22,7 @@ public class ResetPasswordActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reset_password);
+        getSupportActionBar().setTitle(R.string.title_activity_reset_password);
         final Button resetPassword   = (Button)findViewById(R.id.resetPassword);
         final EditText oldPassword   = (EditText)findViewById(R.id.oldPassText);
         final EditText newPassword   = (EditText)findViewById(R.id.newPassText);

@@ -24,7 +24,7 @@ import com.se1.DropBox.ListDropboxFiles;
 import com.se1.DropBox.UploadFileToDropbox;
 import com.se1.main.R;
 
-public class DropboxActivity extends Activity implements OnClickListener {
+public class DropboxActivity extends BaseActivity implements OnClickListener {
     private DropboxAPI<AndroidAuthSession> dropbox;
     private final static String FILE_DIR = "/";
     private final static String DROPBOX_NAME = "dropbox_prefs";
@@ -39,7 +39,17 @@ public class DropboxActivity extends Activity implements OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dropbox);
+       /*Start of NavDrawer code*/
+        getLayoutInflater().inflate(R.layout.activity_dropbox, frameLayout);
+
+        /**
+         * Setting title and itemChecked
+         */
+        mDrawerList.setItemChecked(position, true);
+        setTitle(listArray[position]);
+
+        /*End of NavDrawer code*/
+        // setContentView(R.layout.activity_dropbox);
 
         logIn = (Button) findViewById(R.id.dropbox_login);
         logIn.setOnClickListener(this);

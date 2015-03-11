@@ -20,9 +20,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:support-v4:21.0.3'
-    compile files('/Users/Mrinmoy/Documents/CloudSync/libs/dropbox-android-sdk-1.6.3.jar')
-    compile files('/Users/Mrinmoy/Documents/CloudSync/libs/json_simple-1.1.jar')
+    compile files('F:/MS Related/SE1/Project/workspace/CloudSync/libs/json_simple-1.1.jar')
+    compile files('F:/MS Related/SE1/Project/workspace/CloudSync/libs/dropbox-android-sdk-1.6.3.jar')
+    compile 'com.android.support:appcompat-v7:21.0.3'
 }

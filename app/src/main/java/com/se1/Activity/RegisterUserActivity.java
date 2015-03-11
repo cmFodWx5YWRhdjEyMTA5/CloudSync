@@ -22,6 +22,7 @@ public class RegisterUserActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_user);
+        getSupportActionBar().setTitle(R.string.title_activity_register_user);
         datasource = new DatabaseOperation(this);
         datasource.open();
         Button registerUser = (Button)findViewById(R.id.registerUser);

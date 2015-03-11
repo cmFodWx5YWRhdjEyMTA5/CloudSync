@@ -1,6 +1,7 @@
 package com.se1.main;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -14,6 +15,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.se1.Activity.BaseActivity;
 import com.se1.Activity.HomeActivity;
 import com.se1.Activity.RegisterUserActivity;
 import com.se1.dao.DatabaseOperation;
@@ -197,7 +199,7 @@ public class MainActivity extends ActionBarActivity {
     //Navigate to home page
     public void goToHomePage()
     {
-        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+        Intent intent = new Intent(MainActivity.this, BaseActivity.class);
         MainActivity.this.startActivity(intent);
     }
     @Override

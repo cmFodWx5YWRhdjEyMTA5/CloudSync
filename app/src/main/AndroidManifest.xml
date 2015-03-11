@@ -28,16 +28,13 @@
         </activity>
         <activity
             android:name="com.se1.Activity.HomeActivity"
-            android:label="@string/title_activity_home"
-            android:parentActivityName=".MainActivity" >
+            android:label="@string/title_activity_home">
         </activity>
         <activity
             android:name="com.se1.Activity.ResetPasswordActivity"
             android:label="@string/title_activity_reset_password"
-            android:parentActivityName="com.se1.Activity.HomeActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.se1.Activity.HomeActivity" />
+             >
+
         </activity>
         <activity
             android:name="com.dropbox.client2.android.AuthActivity"
@@ -70,6 +67,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.se1.Activity.BaseActivity"
+            android:label="@string/title_activity_base" >
         </activity>
     </application>
 
