@@ -1,6 +1,5 @@
 package com.se1.Activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -11,10 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.se1.drawer.DrawerItemCustomAdapter;
 import com.se1.drawer.ObjectDrawerItem;
@@ -62,6 +59,7 @@ public class BaseActivity extends ActionBarActivity {
      *  Base layout node of this Activity.
      * */
     private DrawerLayout mDrawerLayout;
+
 
     /**
      * Drawer listner class for drawer open, close etc.
