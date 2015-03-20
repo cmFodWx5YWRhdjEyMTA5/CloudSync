@@ -3,6 +3,7 @@
     package="com.se1.main" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -72,6 +73,24 @@
             android:name="com.se1.Activity.BaseActivity"
             android:label="@string/title_activity_base" >
         </activity>
+        <activity
+            android:name="com.se1.DropBox.notes.NoteListActivity"
+            android:label="@string/title_note_list" >
+        </activity>
+        <activity
+            android:name="com.se1.DropBox.notes.NoteDetailActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:label="@string/title_note_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.se1.DropBox.notes.NoteListActivity" />
+        </activity>
+        <activity android:name="com.dropbox.sync.android.DbxAuthActivity" />
+        <service
+            android:name="com.dropbox.sync.android.DbxSyncService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="Dropbox Sync" />
     </application>
 
 </manifest>
